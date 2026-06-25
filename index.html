@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bail on me — Plans change. That's okay.</title>
+  <meta name="description" content="The app that makes it okay to bail. Make plans with friends, cancel guilt-free, earn credit for showing up." />
+  <link rel="icon" type="image/png" href="assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --cream:   #F5F0E8;
+      --ink:     #1A1A1A;
+      --green:   #3D8B5E;
+      --green2:  #2A6B45;
+      --salmon:  #E85D3A;
+      --blush:   #FAD4C0;
+      --muted:   #7A7570;
+      --card:    #FFFFFF;
+      --card-elevated: #EEEAE0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--cream);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      width: 100%;
+      max-width: 680px;
+      padding: 80px 24px 64px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 32px;
+    }
+
+    .logo-wrap {
+      background: var(--card);
+      border: 1.5px solid var(--ink);
+      border-radius: 28px;
+      width: 120px;
+      height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 4px 4px 0px var(--ink);
+      overflow: hidden;
+    }
+
+    .logo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 26px;
+    }
+
+    .hero-text { display: flex; flex-direction: column; gap: 16px; }
+
+    h1 {
+      font-size: clamp(40px, 8vw, 64px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+    }
+
+    h1 span { color: var(--green); }
+
+    .tagline {
+      font-size: clamp(17px, 3vw, 20px);
+      font-weight: 500;
+      color: var(--muted);
+      line-height: 1.5;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* ── CTA PILL ── */
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 9999px;
+      border: 1.5px solid var(--ink);
+      box-shadow: 3px 3px 0px var(--ink);
+      text-decoration: none;
+      transition: transform 0.1s, box-shadow 0.1s;
+      cursor: default;
+      opacity: 0.9;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      width: 100%;
+      max-width: 680px;
+      padding: 24px;
+      border-top: 1.5px solid var(--card-elevated);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    footer a {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      .hero { padding: 56px 20px 48px; }
+      footer { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="logo-wrap">
+      <img src="assets/icon.png" alt="Bail on me logo" />
+    </div>
+
+    <div class="hero-text">
+      <h1>Plans change.<br /><span>That's okay.</span></h1>
+      <p class="tagline">
+        Bail on me is the app for making plans with friends — and cancelling them without the guilt.
+      </p>
+    </div>
+
+    <div class="cta">
+      Coming soon to App Store &amp; Google Play
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2026 Bail on me</p>
+    <a href="mailto:support@bailonme.ca">support@bailonme.ca</a>
+  </footer>
+
+</body>
+</html>
